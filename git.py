@@ -65,11 +65,7 @@ class Git:
         command = ['git', 'push', remote_url, branch]
         proc = subprocess.Popen(command, cwd=cwd, stdout=self.pipe, stderr=self.pipe)
         stdout, stderr = proc.communicate()
-        
-        if not stdout is None:
-            print(stdout.decode())
-        if not stderr is None:
-            print(stderr.decode())
+
         if not proc.returncode == 0:
             sys.exit(ERROR_FORMAT % ('git push, ' + proc.returncode))
 
