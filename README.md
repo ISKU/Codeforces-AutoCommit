@@ -76,7 +76,7 @@ Extension
 | **source_tree**    | Save the source code in that path. (The starting directory must match the repository name.)
 | **mkdir**          | Decide if you want to create a directory when you save the source code. <br>(false: dir_name option is ignored.)
 | **dir_name**       | Set the name of the directory where the source code is saved.
-| **sourceName**     | Set the name of the source code file.
+| **source_name**     | Set the name of the source code file.
 | **poll**           | Set the source code search cycle in seconds in Codeforces.
 | **lang**           | Only the languages you submit in that language will be pushed.
 
