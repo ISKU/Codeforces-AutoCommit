@@ -42,8 +42,13 @@ class Main:
     def find_solved_problem(self):
         self.solved_list = []
         solved_set = set()
+
+        user_status_error, user_status = self.crawler.get_user_status(self.user_name)
+        if user_status_error:
+            print(ERROR_FORMAT % ('get_user_status, ' + user_status))
+            return
  
-        for submission in self.crawler.get_user_status(self.user_name):
+        for submission in user_status:
             if not submission['verdict'] == 'OK':
                 continue
 
@@ -83,8 +88,9 @@ class Main:
                 continue
        
             print('* Downloading source (submission: %d, contest: %d, index: %s)' % (submission_id, contest_id, problem_id))
-            error, source = self.crawler.get_source(submission_id, contest_id)
-            if error:
+            source_error, source = self.crawler.get_source(submission_id, contest_id)
+            if source_error:
+                print(ERROR_FORMAT % ('get_source, ' + source))
                 print('* Failed to download the source (submission: %d, contest: %d, index: %s)\n' % (submission_id, contest_id, problem_id))
                 continue
             print(source)
