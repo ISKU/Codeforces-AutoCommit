@@ -6,12 +6,12 @@ Codeforces-AutoCommit
 
 Installation
 ----------
-``` bash
+```
 $ git clone https://github.com/ISKU/Codeforces-AutoCommit
 ```
 
 **Dependency**
-``` bash
+```
 $ pip3 install requests
 $ pip3 install bs4
 ```
@@ -32,12 +32,12 @@ How to use
 ```
 
 - Make sure to enter the user information correctly when running the tool or in info.json. Then run the tool as follows.
-``` bash
+```
 $ python3 main.py
 ```
 
 - This tool has a very long wait time. It is recommended to run in `Background` as follows.
-``` bash
+```
 $ nohup python3 main.py &
 ```
 
