@@ -16,8 +16,8 @@ $ pip3 install requests
 $ pip3 install bs4
 ```
 
-> - [Python](https://www.python.org/)
-> - [Git](https://git-scm.com/)
+- [Python](https://www.python.org/)
+- [Git](https://git-scm.com/)
 
 How to use
 ----------
@@ -103,10 +103,10 @@ Example
 
 License
 ----------
-> - [MIT](LICENSE)
+- [MIT](LICENSE)
 
 Author
 ----------
-> - Minho Kim ([ISKU](https://github.com/ISKU))
-> - http://codeforces.com/profile/isku
-> - **E-mail:** minho.kim093@gmail.com
+- Minho Kim ([ISKU](https://github.com/ISKU))
+- http://codeforces.com/profile/isku
+- **E-mail:** minho.kim093@gmail.com
